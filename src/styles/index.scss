@@ -1,5 +1,7 @@
 @import './fonts.scss';
 @import './common.scss';
+@import './ui.scss';
+
 
 
 .wrapper{
@@ -10,4 +12,29 @@
 .container{
     max-width: 1130px;
     padding: 0 15px;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainScreen {
+    flex:1 0 100%;
+    position: relative;
+		&__bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+}
+.content {
+    font-size: 20px;
 }
