@@ -334,11 +334,7 @@
         background-color:rgb(39%, 76%, 62%, 0.5);
         z-index: 2;
         opacity: 0;
-        // visibility: hidden; /*не появляется фон и логотип*/
-        &:hover{
-            opacity: 1;
-            // visibility: visible; /*не появляется фон и логотип*/
-        }
+        visibility: hidden; 
     }
     
 
@@ -349,6 +345,10 @@
         top: 0;
         left: 0;
     }
+    &:hover{
+        .item__logo{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
-
-.ibg {}
