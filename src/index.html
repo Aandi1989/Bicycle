@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/index.scss">
     <title>Document</title>
 </head>
@@ -139,31 +140,23 @@
                         </div>
                     </div>
                 </section>
-                <swiper-container class="mySwiper slider" pagination="true">
-                    <!-- <div class="container"> -->
-                        <!-- <div class="slider__body"> -->
-                            <swiper-slide class="slider__item">
-                                <div class="slider__icon"><img src="./static/images/titleIcons/twitter.png" alt=""></div>
-                                <h3 class="slider__title">AOD New York  @aod  <span>/  35 min</span></h3>
-                                <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
-                            </swiper-slide>
-                            <swiper-slide class="slider__item">
-                                <div class="slider__icon"><img src="./static/images/titleIcons/twitter.png" alt=""></div>
-                                <h3 class="slider__title">AOD New York  @aod  <span>/  35 min</span></h3>
-                                <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
-                            </swiper-slide>
-                            <swiper-slide class="slider__item">
-                                <div class="slider__icon"><img src="./static/images/titleIcons/twitter.png" alt=""></div>
-                                <h3 class="slider__title">AOD New York  @aod  <span>/  35 min</span></h3>
-                                <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</div>
-                            </swiper-slide>
-                        <!-- </div> -->
-                    <!-- </div> -->
-                </swiper-container>
+                <div class="slider swiper-container">
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="slider__slide swiper-slide">
+                                <div class="text">Lorem, ipsum dolor.</div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="text">Lorem ipsum dolor sit.</div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <div class="text">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./libs/jquery/jquery-3.6.4.js"></script>
     <script src="./script/index.js"></script>
 </body>

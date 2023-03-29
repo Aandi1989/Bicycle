@@ -443,3 +443,24 @@
         line-height: 34px;
     }
 }
+
+.slider {
+    // min-width: 0;
+    // width: 100%;
+    // min-height: 300px;
+    background-color:aquamarine;
+    padding:110px 0px 160px 0px;
+    overflow-x: hidden;
+    &__wrapper {
+        // max-width: 1130px;
+        // margin: 0 auto;
+    }
+    &__slide {
+        text-align: center;
+        // width: 100%;
+    }
+}
+.text {
+}
+
+

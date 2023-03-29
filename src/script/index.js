@@ -27,3 +27,7 @@ ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('
 
 ibg();
 */
+
+new Swiper('.slider',{
+
+})
