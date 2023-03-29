@@ -14,7 +14,7 @@ function ibg() {
 ibg();
 
 /*
-Чистый JS
+Чистый JS ibg
 function ibg(){
 
 let ibg=document.querySelectorAll(".ibg");
@@ -28,6 +28,13 @@ ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('
 ibg();
 */
 
-new Swiper('.slider',{
+// Swiper 
+new Swiper('.swiper-container',{
+    pagination:{
+        el:'.swiper-pagination',
+        clickable: true,
 
+    },
+    grabCursor: true,
+    autoHeight:true,
 })
