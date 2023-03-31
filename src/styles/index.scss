@@ -471,4 +471,43 @@
     }
 }
 
+.shop {
+    &__body {
+        display: flex;
+
+    }
+    &__column {
+        flex:0 1 16.666%;
+        &_b {
+            flex: 0 1 33.333%;
+        }
+    }
+    &__block {
+        
+    }
+    &__footer {}
+    &__btn {}
+}
+.blockShop {
+    height: 100%;
+    &__row {
+        display: flex;
+
+    }
+    &__column {
+        flex: 0 1 50%;
+    }
+    &__item {
+        padding:0px 0px 50% 0px;
+        height: auto;
+        &_b{
+            padding:0px 0px 200.5% 0px;
+        }
+        &_small{
+            padding:0px 0px 100% 0px;
+        }
+    }
+}
+
+
 
