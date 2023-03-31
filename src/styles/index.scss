@@ -630,3 +630,33 @@
     }
 }
 
+.footer {
+    background-color: #f7f7f7;
+    &__row {
+        display: flex;
+        padding: 100px 0;
+        align-items: center;
+        
+    }
+    &__column {
+        flex: 0 1 33.333%;
+    }
+    &__address {}
+    &__social {}
+    &__dev {}
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    &__link {}
+}
+.dev {
+    display: flex;
+    justify-content: flex-end;
+    &__text {}
+    &__icon {}
+}
+
+
