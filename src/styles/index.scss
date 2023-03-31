@@ -35,7 +35,6 @@
         height: 100%;
         top: 0;
         left: 0;
-        // z-index:1;
     }
 }
 
@@ -52,8 +51,6 @@
         height: 85px;
     }
 
-    &__menu {}
-
     &__logo {
         position: absolute;
         top: 0;
@@ -67,10 +64,6 @@
 }
 
 .menu {
-    &__icon {}
-
-    &__body {}
-
     &__list {
         display: flex;
 
@@ -169,6 +162,8 @@
     }
 }
 
+
+
 .iconMenu {
     @media (max-width:767px) {
         display: block;
@@ -218,8 +213,9 @@
     }
 }
 
-
-.content {}
+.lock {
+    overflow: hidden;
+}
 
 .generation {
     padding: 120px 0;
@@ -311,8 +307,6 @@
             flex: 0 1 66.667%;
         }
     }
-
-    &__item {}
 
     &__content {
         padding: 70px 67px 95px 67px;
@@ -476,7 +470,6 @@
 .shop {
     &__body {
         display: flex;
-
     }
 
     &__column {
@@ -486,8 +479,6 @@
             flex: 0 1 33.333%;
         }
     }
-
-    &__block {}
 
     &__footer {
         background-color: #282f35;
@@ -506,7 +497,6 @@
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
-
     }
 
     @media (max-width:1100px) {
@@ -587,12 +577,14 @@
         flex: 1 1 auto;
         border: 1px solid #d3d7d9;
         padding: 22px 28px 20px 28px;
+
         input {
             width: 100%;
             font-size: 20px;
-            color:#505658;
+            color: #505658;
             font-size: 20px;
             line-height: 24px;
+
             &::placeholder {
                 color: #929292;
                 font-style: italic;
@@ -612,19 +604,23 @@
         color: #fff;
         background-color: #64c29e;
     }
+
     @media (max-width:750px) {
-        &__body{
+        &__body {
             padding: 50px 0;
         }
     }
+
     @media (max-width:500px) {
-        &__form{
+        &__form {
             display: block;
         }
+
         &__button {
-            margin:8px 0px 0px 0px;
+            margin: 8px 0px 0px 0px;
         }
-        &__btn{
+
+        &__btn {
             width: 100%;
         }
     }
@@ -632,31 +628,68 @@
 
 .footer {
     background-color: #f7f7f7;
+
     &__row {
         display: flex;
         padding: 100px 0;
         align-items: center;
-        
+
     }
+
     &__column {
         flex: 0 1 33.333%;
     }
-    &__address {}
-    &__social {}
-    &__dev {}
+
+    &__address {
+        color: #848789;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 18px;
+         p:first-child{
+            font-size: 16px;
+            font-weight: 700;
+            font-style:normal ;
+
+        }
+    }
+
+    @media (max-width:1100px){
+        &__row{
+            padding: 50px 0;
+        } 
+    }
+    @media (max-width:600px){
+        &__row{
+            padding: 30px 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__social{
+            margin:15px 0;
+        }
+    }
 }
 
 .social {
     display: flex;
     justify-content: center;
-    align-items:center;
-    &__link {}
+    align-items: center;
+
+    &__link {
+        margin: 0 7.5px;
+    }
 }
+
 .dev {
     display: flex;
     justify-content: flex-end;
-    &__text {}
-    &__icon {}
+    align-items:center;
+
+    &__text {
+        color: #848789;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 17.87px;
+        margin:0px 9px 5px 0px;
+    }
 }
-
-
